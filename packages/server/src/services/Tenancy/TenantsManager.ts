@@ -4,7 +4,7 @@ import { SeedMigration } from '@/lib/Seeder/SeedMigration';
 import TenantDBManager from '@/services/Tenancy/TenantDBManager';
 import events from '@/subscribers/events';
 import { Tenant } from '@/system/models';
-import { EventDispatcher, EventDispatcherInterface } from 'decorators/eventDispatcher';
+import { EventDispatcher, EventDispatcherInterface } from '../../decorators/eventDispatcher';
 import { Inject, Service } from 'typedi';
 import i18n from '../../loaders/i18n';
 

@@ -1,4 +1,4 @@
-import TenantModel from 'models/TenantModel';
+import TenantModel from '../models/TenantModel';
 import { Model, ModelOptions, QueryContext, mixin } from 'objection';
 import Account from './Account';
 import ModelSettings from './ModelSetting';
@@ -69,7 +69,7 @@ export default class UncategorizedCashflowTransaction extends mixin(TenantModel,
    * Relationship mapping.
    */
   static get relationMappings() {
-    const Account = require('models/Account');
+    const Account = require('../models/Account');
 
     return {
       /**

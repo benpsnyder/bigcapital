@@ -5,7 +5,7 @@ import * as R from 'ramda';
 
 import { IAccount, IAccountTransactionsGroupBy, IProfitLossSheetQuery } from '@/interfaces';
 import Ledger from '@/services/Accounting/Ledger';
-import { transformToMapBy } from 'utils';
+import { transformToMapBy } from '../../../utils';
 import { FinancialDatePeriods } from '../FinancialDatePeriods';
 import { ProfitLossSheetQuery } from './ProfitLossSheetQuery';
 

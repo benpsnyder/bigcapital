@@ -1,4 +1,4 @@
-import ModelEntityNotFound from 'exceptions/ModelEntityNotFound';
+import ModelEntityNotFound from '../exceptions/ModelEntityNotFound';
 import { cloneDeep, forOwn, isString } from 'lodash';
 
 function applyGraphFetched(withRelations, builder) {

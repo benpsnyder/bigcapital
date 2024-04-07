@@ -1,4 +1,4 @@
-import TenantModel from 'models/TenantModel';
+import TenantModel from '../models/TenantModel';
 import { Model } from 'objection';
 
 export default class BillLandedCostEntry extends TenantModel {
@@ -13,7 +13,7 @@ export default class BillLandedCostEntry extends TenantModel {
    * Relationship mapping.
    */
   static get relationMappings() {
-    const ItemEntry = require('models/ItemEntry');
+    const ItemEntry = require('../models/ItemEntry');
 
     return {
       itemEntry: {

@@ -1,5 +1,5 @@
 import { DEFAULT_VIEWS } from '@/services/CreditNotes/constants';
-import TenantModel from 'models/TenantModel';
+import TenantModel from '../models/TenantModel';
 import { Model, mixin, raw } from 'objection';
 import CreditNoteMeta from './CreditNote.Meta';
 import CustomViewBaseModel from './CustomViewBaseModel';
@@ -156,10 +156,10 @@ export default class CreditNote extends mixin(TenantModel, [ModelSetting, Custom
    * Relationship mapping.
    */
   static get relationMappings() {
-    const AccountTransaction = require('models/AccountTransaction');
-    const ItemEntry = require('models/ItemEntry');
-    const Customer = require('models/Customer');
-    const Branch = require('models/Branch');
+    const AccountTransaction = require('../models/AccountTransaction');
+    const ItemEntry = require('../models/ItemEntry');
+    const Customer = require('../models/Customer');
+    const Branch = require('../models/Branch');
 
     return {
       /**

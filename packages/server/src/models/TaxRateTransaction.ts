@@ -1,4 +1,4 @@
-import TenantModel from 'models/TenantModel';
+import TenantModel from '../models/TenantModel';
 import { Model, mixin } from 'objection';
 import ModelSearchable from './ModelSearchable';
 
@@ -35,7 +35,7 @@ export default class TaxRateTransaction extends mixin(TenantModel, [ModelSearcha
    * Relationship mapping.
    */
   static get relationMappings() {
-    const TaxRate = require('models/TaxRate');
+    const TaxRate = require('../models/TaxRate');
 
     return {
       /**

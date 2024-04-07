@@ -1,5 +1,5 @@
-import DateSession from 'models/DateSession';
-import PaginationQueryBuilder from 'models/Pagination';
+import DateSession from '../models/DateSession';
+import PaginationQueryBuilder from '../models/Pagination';
 import { Model, mixin } from 'objection';
 
 export default class ModelBase extends mixin(Model, [DateSession]) {

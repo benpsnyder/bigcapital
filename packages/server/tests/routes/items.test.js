@@ -1,4 +1,4 @@
-import Item from 'models/Item';
+import Item from '../models/Item';
 import { loginRes, tenantFactory, tenantWebsite } from '~/dbInit';
 import { expect, request } from '~/testInit';
 

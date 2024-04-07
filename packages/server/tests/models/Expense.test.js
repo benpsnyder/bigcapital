@@ -1,4 +1,4 @@
-import Expense from 'models/Expense';
+import Expense from '../models/Expense';
 import { tenantFactory } from '~/dbInit';
 import { expect } from '~/testInit';
 

@@ -4,7 +4,7 @@ import { Knex } from 'knex';
 import { isEmpty } from 'lodash';
 import * as R from 'ramda';
 import { Service } from 'typedi';
-import { transformToMapBy } from 'utils';
+import { transformToMapBy } from '../../../utils';
 import { FinancialDatePeriods } from '../FinancialDatePeriods';
 import { BalanceSheetQuery } from './BalanceSheetQuery';
 import { BalanceSheetRepositoryNetIncome } from './BalanceSheetRepositoryNetIncome';

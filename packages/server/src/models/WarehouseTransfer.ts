@@ -1,4 +1,4 @@
-import TenantModel from 'models/TenantModel';
+import TenantModel from '../models/TenantModel';
 import { Model, mixin } from 'objection';
 import { DEFAULT_VIEWS } from '../services/Warehouses/WarehousesTransfers/constants';
 import CustomViewBaseModel from './CustomViewBaseModel';
@@ -83,8 +83,8 @@ export default class WarehouseTransfer extends mixin(TenantModel, [
    * Relationship mapping.
    */
   static get relationMappings() {
-    const WarehouseTransferEntry = require('models/WarehouseTransferEntry');
-    const Warehouse = require('models/Warehouse');
+    const WarehouseTransferEntry = require('../models/WarehouseTransferEntry');
+    const Warehouse = require('../models/Warehouse');
 
     return {
       /**

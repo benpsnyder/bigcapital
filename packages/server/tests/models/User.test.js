@@ -1,5 +1,5 @@
 import 'models/Role';
-import User from 'models/TenantUser';
+import User from '../models/TenantUser';
 import { tenantFactory } from '~/dbInit';
 import { expect } from '~/testInit';
 

@@ -1,5 +1,5 @@
 import DependencyGraph from '@/lib/DependencyGraph';
-import Account from 'models/Account';
+import Account from '../models/Account';
 import { tenantFactory } from '~/dbInit';
 import { expect } from '~/testInit';
 

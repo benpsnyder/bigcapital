@@ -1,5 +1,5 @@
 import 'models/Item';
-import ItemCategory from 'models/ItemCategory';
+import ItemCategory from '../models/ItemCategory';
 import { tenantFactory } from '~/dbInit';
 import { expect } from '~/testInit';
 

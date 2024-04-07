@@ -1,4 +1,4 @@
-import TenantModel from 'models/TenantModel';
+import TenantModel from '../models/TenantModel';
 import { Model, mixin } from 'objection';
 import CustomViewBaseModel from './CustomViewBaseModel';
 import ModelSearchable from './ModelSearchable';
@@ -27,8 +27,8 @@ export default class CreditNoteAppliedInvoice extends mixin(TenantModel, [
    * Relationship mapping.
    */
   static get relationMappings() {
-    const SaleInvoice = require('models/SaleInvoice');
-    const CreditNote = require('models/CreditNote');
+    const SaleInvoice = require('../models/SaleInvoice');
+    const CreditNote = require('../models/CreditNote');
 
     return {
       saleInvoice: {

@@ -1,5 +1,5 @@
 import 'models/Account';
-import AccountType from 'models/AccountType';
+import AccountType from '../models/AccountType';
 import { tenantFactory } from '~/dbInit';
 import { expect } from '~/testInit';
 

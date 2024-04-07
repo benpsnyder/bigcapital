@@ -6,7 +6,7 @@ import {
   ISmsNotificationMeta,
 } from '@/interfaces';
 import TenancyService from '@/services/Tenancy/TenancyService';
-import SMSNotificationsConfig from 'config/smsNotifications';
+import SMSNotificationsConfig from '../../config/smsNotifications';
 import { isUndefined, keyBy, omit } from 'lodash';
 import { Inject, Service } from 'typedi';
 

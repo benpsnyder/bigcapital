@@ -1,5 +1,5 @@
-import { ServiceError } from 'exceptions';
-import HasTenancyService from 'services/Tenancy/TenancyService';
+import { ServiceError } from '../../exceptions';
+import HasTenancyService from '../../services/Tenancy/TenancyService';
 import { Inject } from 'typedi';
 import { ERRORS } from './constants';
 

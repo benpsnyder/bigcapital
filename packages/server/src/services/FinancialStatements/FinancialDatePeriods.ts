@@ -7,7 +7,7 @@ import {
 import { memoize } from 'lodash';
 import { compose } from 'lodash/fp';
 import * as R from 'ramda';
-import { dateRangeFromToCollection } from 'utils';
+import { dateRangeFromToCollection } from '../../utils';
 import { FinancialDateRanges } from './FinancialDateRanges';
 
 export const FinancialDatePeriods = (Base) =>

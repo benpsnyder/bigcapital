@@ -1,4 +1,4 @@
-import { SaleReceipt } from 'models';
+import { SaleReceipt } from '../models';
 import { loginRes, tenantFactory, tenantWebsite } from '~/dbInit';
 import { expect, request } from '~/testInit';
 

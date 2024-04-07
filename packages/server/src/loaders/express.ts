@@ -6,7 +6,7 @@ import LoggerMiddleware from '@/api/middleware/LoggerMiddleware';
 import ObjectionErrorHandlerMiddleware from '@/api/middleware/ObjectionErrorHandlerMiddleware';
 import RateLimiterMiddleware from '@/api/middleware/RateLimiterMiddleware';
 import config from '@/config';
-import routes from 'api';
+import routes from '../api';
 import bodyParser from 'body-parser';
 import errorHandler from 'errorhandler';
 import { NextFunction, Request, Response, json } from 'express';

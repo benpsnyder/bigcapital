@@ -24,7 +24,7 @@ import { compose } from 'lodash/fp';
 import * as mathjs from 'mathjs';
 import moment from 'moment';
 import * as R from 'ramda';
-import { accumSum, transformToMapBy } from 'utils';
+import { accumSum, transformToMapBy } from '../../../utils';
 import FinancialSheet from '../FinancialSheet';
 import { FinancialSheetStructure } from '../FinancialSheetStructure';
 import { CashFlowStatementDatePeriods } from './CashFlowDatePeriods';

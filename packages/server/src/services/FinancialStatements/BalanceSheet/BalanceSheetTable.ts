@@ -13,7 +13,7 @@ import {
   ITableRow,
 } from '@/interfaces';
 import * as R from 'ramda';
-import { tableRowMapper } from 'utils';
+import { tableRowMapper } from '../../../utils';
 import FinancialSheet from '../FinancialSheet';
 import { FinancialSheetStructure } from '../FinancialSheetStructure';
 import { FinancialTable } from '../FinancialTable';

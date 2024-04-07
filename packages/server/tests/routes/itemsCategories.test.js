@@ -1,4 +1,4 @@
-import ItemCategory from 'models/ItemCategory';
+import ItemCategory from '../models/ItemCategory';
 import { loginRes, tenantFactory, tenantWebsite } from '~/dbInit';
 import { expect, request } from '~/testInit';
 

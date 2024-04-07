@@ -1,4 +1,4 @@
-import Resource from 'models/Resource';
+import Resource from '../models/Resource';
 import 'models/ResourceField';
 import 'models/View';
 import { tenantFactory } from '~/dbInit';

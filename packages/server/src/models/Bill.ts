@@ -1,6 +1,6 @@
 import { DEFAULT_VIEWS } from '@/services/Purchases/Bills/constants';
 import { castArray, difference } from 'lodash';
-import TenantModel from 'models/TenantModel';
+import TenantModel from '../models/TenantModel';
 import moment from 'moment';
 import { Model, mixin, raw } from 'objection';
 import BillSettings from './Bill.Settings';
@@ -390,11 +390,11 @@ export default class Bill extends mixin(TenantModel, [ModelSetting, CustomViewBa
    * Relationship mapping.
    */
   static get relationMappings() {
-    const Vendor = require('models/Vendor');
-    const ItemEntry = require('models/ItemEntry');
-    const BillLandedCost = require('models/BillLandedCost');
-    const Branch = require('models/Branch');
-    const TaxRateTransaction = require('models/TaxRateTransaction');
+    const Vendor = require('../models/Vendor');
+    const ItemEntry = require('../models/ItemEntry');
+    const BillLandedCost = require('../models/BillLandedCost');
+    const Branch = require('../models/Branch');
+    const TaxRateTransaction = require('../models/TaxRateTransaction');
 
     return {
       vendor: {

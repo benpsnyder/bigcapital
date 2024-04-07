@@ -1,4 +1,4 @@
-import TenantModel from 'models/TenantModel';
+import TenantModel from '../models/TenantModel';
 import { Model } from 'objection';
 
 export default class ManualJournalEntry extends TenantModel {
@@ -20,9 +20,9 @@ export default class ManualJournalEntry extends TenantModel {
    * Relationship mapping.
    */
   static get relationMappings() {
-    const Account = require('models/Account');
-    const Contact = require('models/Contact');
-    const Branch = require('models/Branch');
+    const Account = require('../models/Account');
+    const Contact = require('../models/Contact');
+    const Branch = require('../models/Branch');
 
     return {
       account: {

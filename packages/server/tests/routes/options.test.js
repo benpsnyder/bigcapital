@@ -1,4 +1,4 @@
-import Option from 'models/Option';
+import Option from '../models/Option';
 import { loginRes, tenantFactory, tenantWebsite } from '~/dbInit';
 import { expect, request } from '~/testInit';
 

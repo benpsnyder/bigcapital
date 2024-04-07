@@ -1,4 +1,4 @@
-import TenantModel from 'models/TenantModel';
+import TenantModel from '../models/TenantModel';
 import { Model } from 'objection';
 
 export default class BillPaymentEntry extends TenantModel {
@@ -20,8 +20,8 @@ export default class BillPaymentEntry extends TenantModel {
    * Relationship mapping.
    */
   static get relationMappings() {
-    const Bill = require('models/Bill');
-    const BillPayment = require('models/BillPayment');
+    const Bill = require('../models/Bill');
+    const BillPayment = require('../models/BillPayment');
 
     return {
       payment: {

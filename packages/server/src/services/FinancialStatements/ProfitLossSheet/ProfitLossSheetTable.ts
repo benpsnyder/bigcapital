@@ -11,7 +11,7 @@ import {
   ProfitLossSheetRowType,
 } from '@/interfaces';
 import * as R from 'ramda';
-import { tableRowMapper } from 'utils';
+import { tableRowMapper } from '../../../utils';
 import { FinancialSheetStructure } from '../FinancialSheetStructure';
 import { FinancialTable } from '../FinancialTable';
 import { ProfitLossSheetBase } from './ProfitLossSheetBase';

@@ -4,11 +4,11 @@ import {
   filterDeep,
   filterNodesDeep,
   findValueDeep,
-  mapValues,
   mapValuesDeep,
   mapValuesDeepReverse,
   reduceDeep,
-} from 'utils/deepdash';
+} from '../../utils/deepdash';
+import { mapValues } from 'lodash';
 
 export const FinancialSheetStructure = (Base: Class) =>
   class extends Base {

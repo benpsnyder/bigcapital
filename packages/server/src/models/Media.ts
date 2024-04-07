@@ -1,4 +1,4 @@
-import TenantModel from 'models/TenantModel';
+import TenantModel from '../models/TenantModel';
 import { Model } from 'objection';
 
 export default class Media extends TenantModel {
@@ -20,7 +20,7 @@ export default class Media extends TenantModel {
    * Relationship mapping.
    */
   static get relationMappings() {
-    const MediaLink = require('models/MediaLink');
+    const MediaLink = require('../models/MediaLink');
 
     return {
       links: {

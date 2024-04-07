@@ -1,5 +1,5 @@
 import { castArray } from 'lodash';
-import TenantModel from 'models/TenantModel';
+import TenantModel from '../models/TenantModel';
 import moment from 'moment';
 import { Model } from 'objection';
 
@@ -69,10 +69,10 @@ export default class InventoryCostLotTracker extends TenantModel {
    * Relationship mapping.
    */
   static get relationMappings() {
-    const Item = require('models/Item');
-    const SaleInvoice = require('models/SaleInvoice');
-    const ItemEntry = require('models/ItemEntry');
-    const SaleReceipt = require('models/SaleReceipt');
+    const Item = require('../models/Item');
+    const SaleInvoice = require('../models/SaleInvoice');
+    const ItemEntry = require('../models/ItemEntry');
+    const SaleReceipt = require('../models/SaleReceipt');
 
     return {
       item: {

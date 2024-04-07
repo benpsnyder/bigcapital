@@ -1,4 +1,4 @@
-import BaseModel from 'models/Model';
+import BaseModel from '../../models/Model';
 import { Container } from 'typedi';
 
 export default class SystemModel extends BaseModel {

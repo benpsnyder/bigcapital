@@ -6,7 +6,7 @@ import HasTenancyService from '@/services/Tenancy/TenancyService';
 import events from '@/subscribers/events';
 import { TenantMetadata } from '@/system/models';
 import { Inject, Service } from 'typedi';
-import { formatNumber, formatSmsMessage } from 'utils';
+import { formatNumber, formatSmsMessage } from '../../../utils';
 import SaleNotifyBySms from '../SaleNotifyBySms';
 import { ERRORS } from './constants';
 

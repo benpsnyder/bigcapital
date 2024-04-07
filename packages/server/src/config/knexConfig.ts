@@ -1,4 +1,4 @@
-import config from '@/config';
+import config from '../config';
 import { ITenant } from '@/interfaces';
 
 export const tenantKnexConfig = (tenant: ITenant) => {

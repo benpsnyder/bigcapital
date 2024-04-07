@@ -1,4 +1,4 @@
-import Item from 'models/Item';
+import Item from '../models/Item';
 import { tenantFactory } from '~/dbInit';
 import { expect } from '~/testInit';
 

@@ -1,4 +1,4 @@
-import TenantModel from 'models/TenantModel';
+import TenantModel from '../models/TenantModel';
 import { Model } from 'objection';
 
 export default class User extends TenantModel {
@@ -41,7 +41,7 @@ export default class User extends TenantModel {
    * Relationship mapping.
    */
   static get relationMappings() {
-    const Role = require('models/Role');
+    const Role = require('../models/Role');
 
     return {
       /**

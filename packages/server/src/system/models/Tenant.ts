@@ -1,4 +1,4 @@
-import BaseModel from 'models/Model';
+import BaseModel from '../../models/Model';
 import moment from 'moment';
 import { Model } from 'objection';
 import uniqid from 'uniqid';

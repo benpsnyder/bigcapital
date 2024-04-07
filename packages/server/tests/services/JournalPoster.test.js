@@ -1,9 +1,9 @@
 import JournalEntry from '@/services/Accounting/JournalEntry';
 import JournalPoster from '@/services/Accounting/JournalPoster';
 import { omit } from 'lodash';
-import Account from 'models/Account';
-import AccountBalance from 'models/AccountBalance';
-import AccountTransaction from 'models/AccountTransaction';
+import Account from '../models/Account';
+import AccountBalance from '../models/AccountBalance';
+import AccountTransaction from '../models/AccountTransaction';
 import { tenantFactory } from '~/dbInit';
 import { expect } from '~/testInit';
 

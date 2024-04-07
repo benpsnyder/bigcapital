@@ -2,6 +2,7 @@ import {
   ICashFlowStatementDOO,
   ICashFlowStatementSection,
   ICashFlowStatementSectionType,
+  ICashFlowTable,
   IDateRange,
   ITableColumn,
   ITableRow,
@@ -9,8 +10,8 @@ import {
 import { isEmpty } from 'lodash';
 import moment from 'moment';
 import * as R from 'ramda';
-import { dateRangeFromToCollection, tableRowMapper } from 'utils';
-import { mapValuesDeep } from 'utils/deepdash';
+import { dateRangeFromToCollection, tableRowMapper } from '../../../utils';
+import { mapValuesDeep } from '../../../utils/deepdash';
 
 enum IROW_TYPE {
   AGGREGATE = 'AGGREGATE',

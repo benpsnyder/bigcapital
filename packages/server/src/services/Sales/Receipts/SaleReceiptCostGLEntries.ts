@@ -5,7 +5,7 @@ import HasTenancyService from '@/services/Tenancy/TenancyService';
 import { Knex } from 'knex';
 import * as R from 'ramda';
 import { Inject, Service } from 'typedi';
-import { increment } from 'utils';
+import { increment } from '../../../utils';
 import { groupInventoryTransactionsByTypeId } from '../../Inventory/utils';
 
 @Service()
