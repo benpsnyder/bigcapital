@@ -1,9 +1,9 @@
 import { expect } from '~/testInit';
 import JournalPoster from '@/services/Accounting/JournalPoster';
 import JournalEntry from '@/services/Accounting/JournalEntry';
-import AccountBalance from 'models/AccountBalance';
-import AccountTransaction from 'models/AccountTransaction';
-import Account from 'models/Account';
+import AccountBalance from '@/models/AccountBalance';
+import AccountTransaction from '@/models/AccountTransaction';
+import Account from '@/models/Account';
 import {
   tenantWebsite,
   tenantFactory,

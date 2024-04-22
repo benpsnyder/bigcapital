@@ -1,5 +1,5 @@
 import { Model, mixin, raw } from 'objection';
-import TenantModel from 'models/TenantModel';
+import TenantModel from '@/models/TenantModel';
 import { viewRolesBuilder } from '@/lib/ViewRolesBuilder';
 import ModelSetting from './ModelSetting';
 import ExpenseSettings from './Expense.Settings';
@@ -178,10 +178,10 @@ export default class Expense extends mixin(TenantModel, [
    * Relationship mapping.
    */
   static get relationMappings() {
-    const Account = require('models/Account');
-    const ExpenseCategory = require('models/ExpenseCategory');
-    const Media = require('models/Media');
-    const Branch = require('models/Branch');
+    const Account = require('@/models/Account');
+    const ExpenseCategory = require('@/models/ExpenseCategory');
+    const Media = require('@/models/Media');
+    const Branch = require('@/models/Branch');
 
     return {
       paymentAccount: {

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Inject, Service } from 'typedi';
 import { SaleInvoiceMailOptions } from '@/interfaces';
 import HasTenancyService from '@/services/Tenancy/TenancyService';

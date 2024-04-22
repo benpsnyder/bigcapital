@@ -4,7 +4,7 @@ import * as R from 'ramda';
 import * as qim from 'qim';
 import { IBillLandedCostTransaction } from '@/interfaces';
 import HasTenancyService from '@/services/Tenancy/TenancyService';
-import { formatNumber } from 'utils';
+import { formatNumber } from '@/utils';
 import I18nService from '@/services/I18n/I18nService';
 
 @Service()

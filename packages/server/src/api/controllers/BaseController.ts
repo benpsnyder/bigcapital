@@ -2,7 +2,7 @@ import { Response, Request, NextFunction } from 'express';
 import { matchedData, validationResult } from 'express-validator';
 import accepts from 'accepts';
 import { isArray, drop, first, camelCase, snakeCase, omit, set, get } from 'lodash';
-import { mapKeysDeep } from 'utils';
+import { mapKeysDeep } from '@/utils';
 import asyncMiddleware from '@/api/middleware/asyncMiddleware';
 
 export default class BaseController {

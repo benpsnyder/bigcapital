@@ -1,4 +1,4 @@
-import { Account } from 'models';
+import { Account } from '@/models';
 import TenantRepository from '@/repositories/TenantRepository';
 import { IAccount } from '@/interfaces';
 import { Knex } from 'knex';

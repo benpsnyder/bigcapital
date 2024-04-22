@@ -1,4 +1,4 @@
-import BaseModel from 'models/Model';
+import BaseModel from '@/models/Model';
 import CacheService from '@/services/Cache';
 
 export default (Model) => {

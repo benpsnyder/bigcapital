@@ -1,7 +1,7 @@
 import * as R from 'ramda';
 import { sumBy, mapValues, get } from 'lodash';
 import { ACCOUNT_ROOT_TYPE } from '@/data/AccountTypes';
-import { accumSum, dateRangeFromToCollection } from 'utils';
+import { accumSum, dateRangeFromToCollection } from '@/utils';
 import {
   ICashFlowDatePeriod,
   ICashFlowStatementNetIncomeSection,

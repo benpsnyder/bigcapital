@@ -4,7 +4,7 @@ import { IItemEntry, IItemEntryDTO, IItem } from '@/interfaces';
 import { ServiceError } from '@/exceptions';
 import TenancyService from '@/services/Tenancy/TenancyService';
 import { ItemEntry } from '@/models';
-import { entriesAmountDiff } from 'utils';
+import { entriesAmountDiff } from '@/utils';
 
 const ERRORS = {
   ITEMS_NOT_FOUND: 'ITEMS_NOT_FOUND',

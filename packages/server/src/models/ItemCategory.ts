@@ -1,5 +1,5 @@
 import { Model, mixin } from 'objection';
-import TenantModel from 'models/TenantModel';
+import TenantModel from '@/models/TenantModel';
 import ModelSetting from './ModelSetting';
 import ItemCategorySettings from './ItemCategory.Settings';
 
@@ -22,7 +22,7 @@ export default class ItemCategory extends mixin(TenantModel, [ModelSetting]) {
    * Relationship mapping.
    */
   static get relationMappings() {
-    const Item = require('models/Item');
+    const Item = require('@/models/Item');
 
     return {
       /**

@@ -24,7 +24,7 @@ import {
 } from '@/interfaces';
 import CASH_FLOW_SCHEMA from './schema';
 import FinancialSheet from '../FinancialSheet';
-import { transformToMapBy, accumSum } from 'utils';
+import { transformToMapBy, accumSum } from '@/utils';
 import { ACCOUNT_ROOT_TYPE } from '@/data/AccountTypes';
 import { CashFlowStatementDatePeriods } from './CashFlowDatePeriods';
 import I18nService from '@/services/I18n/I18nService';

@@ -15,7 +15,7 @@ import { WarehouseTransactionDTOTransform } from '@/services/Warehouses/Integrat
 import ItemsEntriesService from '@/services/Items/ItemsEntriesService';
 import { CommandSaleInvoiceValidators } from './CommandSaleInvoiceValidators';
 import { SaleInvoiceIncrement } from './SaleInvoiceIncrement';
-import { formatDateFields } from 'utils';
+import { formatDateFields } from '@/utils';
 import { ItemEntriesTaxTransactions } from '@/services/TaxRates/ItemEntriesTaxTransactions';
 import { ItemEntry } from '@/models';
 

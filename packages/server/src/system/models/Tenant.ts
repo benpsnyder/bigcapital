@@ -2,7 +2,7 @@ import moment from 'moment';
 import { Model } from 'objection';
 import uniqid from 'uniqid';
 import SubscriptionPeriod from '@/services/Subscription/SubscriptionPeriod';
-import BaseModel from 'models/Model';
+import BaseModel from '@/models/Model';
 import TenantMetadata from './TenantMetadata';
 import PlanSubscription from './Subscriptions/PlanSubscription';
 

@@ -1,6 +1,6 @@
 import { isNull } from 'lodash';
 import { Transformer } from '@/lib/Transformer/Transformer';
-import { formatNumber } from 'utils';
+import { formatNumber } from '@/utils';
 import { IContact } from '@/interfaces';
 
 export default class ContactTransfromer extends Transformer {

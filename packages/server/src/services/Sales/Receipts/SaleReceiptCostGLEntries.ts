@@ -2,7 +2,7 @@ import { Service, Inject } from 'typedi';
 import * as R from 'ramda';
 import { Knex } from 'knex';
 import { AccountNormal, IInventoryLotCost, ILedgerEntry } from '@/interfaces';
-import { increment } from 'utils';
+import { increment } from '@/utils';
 import HasTenancyService from '@/services/Tenancy/TenancyService';
 import Ledger from '@/services/Accounting/Ledger';
 import LedgerStorageService from '@/services/Accounting/LedgerStorageService';

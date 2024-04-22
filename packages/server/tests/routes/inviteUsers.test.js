@@ -10,7 +10,7 @@ import {
   loginRes
 } from '~/dbInit';
 import Invite from '@/system/models/Invite'
-import TenantUser from 'models/TenantUser';
+import TenantUser from '@/models/TenantUser';
 import SystemUser from '@/system/models/SystemUser';
 
 describe('routes: `/api/invite_users`', () => {

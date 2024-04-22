@@ -6,8 +6,8 @@ import app from 'app';
 import createTenantFactory from '@/database/factories';
 import TenantsManager from '@/system/TenantsManager';
 import faker from 'faker';
-import { hashPassword } from 'utils';
-import TenantModel from 'models/TenantModel';
+import { hashPassword } from '@/utils';
+import TenantModel from '@/models/TenantModel';
 import createSystemFactory from '@/database/factories/system';
 
 

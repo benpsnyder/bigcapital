@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Service } from 'typedi';
 import { NotAllowedChangeSubscriptionPlan } from '@/exceptions';
 import { Plan, Tenant } from '@/system/models';

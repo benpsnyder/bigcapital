@@ -65,7 +65,7 @@ export class Import extends SystemModel {
    * Relationship mapping.
    */
   static get relationMappings() {
-    const Tenant = require('system/models/Tenant');
+    const Tenant = require('@/system/models/Tenant');
 
     return {
       /**

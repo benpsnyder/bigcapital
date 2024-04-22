@@ -4,7 +4,7 @@ import { Service, Inject } from 'typedi';
 import * as R from 'ramda';
 import { IInventoryItemCostMeta } from '@/interfaces';
 import TenancyService from '@/services/Tenancy/TenancyService';
-import ItemWarehouseQuantity from 'models/ItemWarehouseQuantity';
+import ItemWarehouseQuantity from '@/models/ItemWarehouseQuantity';
 import { ModelUpdateOptions } from 'mongoose';
 
 @Service()

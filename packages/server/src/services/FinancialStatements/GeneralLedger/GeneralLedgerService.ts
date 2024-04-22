@@ -6,7 +6,7 @@ import { IGeneralLedgerSheetQuery, IGeneralLedgerMeta } from '@/interfaces';
 import TenancyService from '@/services/Tenancy/TenancyService';
 import Journal from '@/services/Accounting/JournalPoster';
 import GeneralLedgerSheet from '@/services/FinancialStatements/GeneralLedger/GeneralLedger';
-import { transformToMap } from 'utils';
+import { transformToMap } from '@/utils';
 import { Tenant } from '@/system/models';
 import { GeneralLedgerMeta } from './GeneralLedgerMeta';
 

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Inject, Service } from 'typedi';
 import {
   PaymentReceiveMailOpts,

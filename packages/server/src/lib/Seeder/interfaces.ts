@@ -1,4 +1,4 @@
-import { ITenant } from "interfaces";
+import { ITenant } from "@/interfaces";
 
 export interface FsMigrations {}
 

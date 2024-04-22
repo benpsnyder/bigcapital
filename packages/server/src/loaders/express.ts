@@ -6,7 +6,7 @@ import errorHandler from 'errorhandler';
 import bodyParser from 'body-parser';
 import { Server } from 'socket.io';
 import Container from 'typedi';
-import routes from 'api';
+import routes from '@/api';
 import LoggerMiddleware from '@/api/middleware/LoggerMiddleware';
 import AgendashController from '@/api/controllers/Agendash';
 import ConvertEmptyStringsToNull from '@/api/middleware/ConvertEmptyStringsToNull';

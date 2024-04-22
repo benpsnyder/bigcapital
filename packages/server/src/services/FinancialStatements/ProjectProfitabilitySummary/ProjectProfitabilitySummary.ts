@@ -4,7 +4,7 @@ import {
   IProjectProfitabilitySummaryProjectNode,
   IProjectProfitabilitySummaryTotal,
 } from '@/interfaces';
-import Project from 'models/Project';
+import Project from '@/models/Project';
 import { ProjectProfitabilitySummaryRespository } from './ProjectProfitabilitySummaryRepository';
 import FinancialSheet from '../FinancialSheet';
 

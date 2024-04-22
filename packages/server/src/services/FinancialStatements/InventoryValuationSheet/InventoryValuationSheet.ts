@@ -9,7 +9,7 @@ import {
   IInventoryValuationStatement,
   IInventoryValuationTotal,
 } from '@/interfaces';
-import { allPassedConditionsPass, transformToMap } from 'utils';
+import { allPassedConditionsPass, transformToMap } from '@/utils';
 
 export class InventoryValuationSheet extends FinancialSheet {
   readonly query: IInventoryValuationReportQuery;

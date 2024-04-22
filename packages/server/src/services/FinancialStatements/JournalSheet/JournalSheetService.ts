@@ -5,7 +5,7 @@ import JournalSheet from './JournalSheet';
 import TenancyService from '@/services/Tenancy/TenancyService';
 import Journal from '@/services/Accounting/JournalPoster';
 import { Tenant } from '@/system/models';
-import { transformToMap } from 'utils';
+import { transformToMap } from '@/utils';
 import { JournalSheetMeta } from './JournalSheetMeta';
 
 @Service()

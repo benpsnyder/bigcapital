@@ -3,7 +3,7 @@ import { mixin, Model } from 'objection';
 import { castArray } from 'lodash';
 import TenantModel from '@/models/TenantModel';
 import { buildFilterQuery, buildSortColumnQuery } from '@/lib/ViewRolesBuilder';
-import { flatToNestedArray } from 'utils';
+import { flatToNestedArray } from '@/utils';
 import DependencyGraph from '@/lib/DependencyGraph';
 import AccountTypesUtils from '@/lib/AccountTypes';
 import AccountSettings from './Account.Settings';
@@ -189,14 +189,14 @@ export default class Account extends mixin(TenantModel, [
    * Relationship mapping.
    */
   static get relationMappings() {
-    const AccountTransaction = require('models/AccountTransaction');
-    const Item = require('models/Item');
-    const InventoryAdjustment = require('models/InventoryAdjustment');
-    const ManualJournalEntry = require('models/ManualJournalEntry');
-    const Expense = require('models/Expense');
-    const ExpenseEntry = require('models/ExpenseCategory');
-    const ItemEntry = require('models/ItemEntry');
-    const UncategorizedTransaction = require('models/UncategorizedCashflowTransaction');
+    const AccountTransaction = require('@/models/AccountTransaction');
+    const Item = require('@/models/Item');
+    const InventoryAdjustment = require('@/models/InventoryAdjustment');
+    const ManualJournalEntry = require('@/models/ManualJournalEntry');
+    const Expense = require('@/models/Expense');
+    const ExpenseEntry = require('@/models/ExpenseCategory');
+    const ItemEntry = require('@/models/ItemEntry');
+    const UncategorizedTransaction = require('@/models/UncategorizedCashflowTransaction');
 
     return {
       /**

@@ -3,7 +3,7 @@ import * as R from 'ramda';
 import { Knex } from 'knex';
 import { isEmpty } from 'lodash';
 
-import { transformToMapBy } from 'utils';
+import { transformToMapBy } from '@/utils';
 import {
   IProfitLossSheetQuery,
   IAccount,

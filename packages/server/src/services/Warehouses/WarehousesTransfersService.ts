@@ -1,3 +1,4 @@
+import { ICreateWarehouseTransferDTO, IEditWarehouseTransferDTO } from '@/interfaces';
 import { Service, Inject } from 'typedi';
 
 

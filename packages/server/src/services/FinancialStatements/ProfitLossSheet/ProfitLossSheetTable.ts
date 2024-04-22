@@ -11,7 +11,7 @@ import {
   IProfitLossSheetEquationNode,
   IProfitLossSheetAccountNode,
 } from '@/interfaces';
-import { tableRowMapper } from 'utils';
+import { tableRowMapper } from '@/utils';
 import { FinancialTable } from '../FinancialTable';
 import { ProfitLossSheetBase } from './ProfitLossSheetBase';
 import { ProfitLossSheetTablePercentage } from './ProfitLossSheetTablePercentage';

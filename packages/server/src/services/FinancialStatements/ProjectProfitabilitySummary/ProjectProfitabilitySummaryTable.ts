@@ -8,7 +8,7 @@ import {
   ITableColumn,
   ITableRow,
 } from '@/interfaces';
-import { tableRowMapper } from 'utils';
+import { tableRowMapper } from '@/utils';
 
 export class ProjectProfitabilitySummaryTable {
   /**

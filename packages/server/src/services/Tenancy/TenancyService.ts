@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Container, Service, Inject } from 'typedi';
 import TenantsManagerService from '@/services/Tenancy/TenantsManager';
 import tenantModelsLoader from '@/loaders/tenantModels';

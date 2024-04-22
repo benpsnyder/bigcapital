@@ -9,7 +9,7 @@ import {
   IAccountType,
 } from '@/interfaces';
 import FinancialSheet from '../FinancialSheet';
-import { allPassedConditionsPass, flatToNestedArray } from 'utils';
+import { allPassedConditionsPass, flatToNestedArray } from '@/utils';
 import { TrialBalanceSheetRepository } from './TrialBalanceSheetRepository';
 
 export default class TrialBalanceSheet extends FinancialSheet {

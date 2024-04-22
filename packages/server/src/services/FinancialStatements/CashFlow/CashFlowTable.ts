@@ -11,8 +11,8 @@ import {
   IDateRange,
   ICashFlowStatementDOO,
 } from '@/interfaces';
-import { dateRangeFromToCollection, tableRowMapper } from 'utils';
-import { mapValuesDeep } from 'utils/deepdash';
+import { dateRangeFromToCollection, tableRowMapper } from '@/utils';
+import { mapValuesDeep } from '@/utils/deepdash';
 
 enum IROW_TYPE {
   AGGREGATE = 'AGGREGATE',

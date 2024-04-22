@@ -9,7 +9,7 @@ import {
   ILedger,
   IContactBalanceSummaryQuery,
 } from '@/interfaces';
-import { allPassedConditionsPass } from 'utils';
+import { allPassedConditionsPass } from '@/utils';
 
 export class ContactBalanceSummaryReport extends FinancialSheet {
   readonly baseCurrency: string;

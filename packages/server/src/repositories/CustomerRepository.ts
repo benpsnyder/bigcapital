@@ -1,5 +1,5 @@
 import TenantRepository from "./TenantRepository";
-import { Customer } from 'models';
+import { Customer } from '@/models';
 
 export default class CustomerRepository extends TenantRepository {
   /**

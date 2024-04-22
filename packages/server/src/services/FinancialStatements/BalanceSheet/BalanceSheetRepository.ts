@@ -8,7 +8,7 @@ import {
   IBalanceSheetQuery,
   ILedger,
 } from '@/interfaces';
-import { transformToMapBy } from 'utils';
+import { transformToMapBy } from '@/utils';
 import Ledger from '@/services/Accounting/Ledger';
 import { BalanceSheetQuery } from './BalanceSheetQuery';
 import { FinancialDatePeriods } from '../FinancialDatePeriods';

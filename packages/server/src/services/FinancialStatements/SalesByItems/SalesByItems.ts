@@ -2,7 +2,7 @@ import { get, sumBy } from 'lodash';
 
 import * as R from 'ramda';
 import FinancialSheet from '../FinancialSheet';
-import { allPassedConditionsPass, transformToMap } from 'utils';
+import { allPassedConditionsPass, transformToMap } from '@/utils';
 import {
   ISalesByItemsReportQuery,
   IAccountTransaction,

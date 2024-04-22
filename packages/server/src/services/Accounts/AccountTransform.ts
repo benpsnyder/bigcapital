@@ -5,7 +5,7 @@ import {
   flatToNestedArray,
   formatNumber,
   nestedArrayToFlatten,
-} from 'utils';
+} from '@/utils';
 
 export class AccountTransformer extends Transformer {
   /**

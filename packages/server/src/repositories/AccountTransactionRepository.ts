@@ -1,5 +1,5 @@
 import { isEmpty, castArray } from 'lodash';
-import { AccountTransaction } from 'models';
+import { AccountTransaction } from '@/models';
 import TenantRepository from '@/repositories/TenantRepository';
 
 interface IJournalTransactionsFilter {

@@ -1,9 +1,10 @@
+// ts-nocheck
 import { Container, Inject, Service } from 'typedi';
 import { ITenantManager, ITenant, ITenantDBManager } from '@/interfaces';
 import {
   EventDispatcherInterface,
   EventDispatcher,
-} from 'decorators/eventDispatcher';
+} from '@/decorators/eventDispatcher';
 import {
   TenantAlreadyInitialized,
   TenantAlreadySeeded,

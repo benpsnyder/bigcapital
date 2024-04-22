@@ -1,5 +1,5 @@
 import { Model, mixin } from 'objection';
-import TenantModel from 'models/TenantModel';
+import TenantModel from '@/models/TenantModel';
 import ModelSetting from './ModelSetting';
 import SaleReceiptSettings from './SaleReceipt.Settings';
 import CustomViewBaseModel from './CustomViewBaseModel';
@@ -103,11 +103,11 @@ export default class SaleReceipt extends mixin(TenantModel, [
    * Relationship mapping.
    */
   static get relationMappings() {
-    const Customer = require('models/Customer');
-    const Account = require('models/Account');
-    const AccountTransaction = require('models/AccountTransaction');
-    const ItemEntry = require('models/ItemEntry');
-    const Branch = require('models/Branch');
+    const Customer = require('@/models/Customer');
+    const Account = require('@/models/Account');
+    const AccountTransaction = require('@/models/AccountTransaction');
+    const ItemEntry = require('@/models/ItemEntry');
+    const Branch = require('@/models/Branch');
 
     return {
       customer: {

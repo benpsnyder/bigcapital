@@ -8,7 +8,7 @@ import {
   ICustomerBalanceSummaryQuery,
   ITableColumn,
 } from '@/interfaces';
-import { tableMapper, tableRowMapper } from 'utils';
+import { tableMapper, tableRowMapper } from '@/utils';
 
 enum TABLE_ROWS_TYPES {
   CUSTOMER = 'CUSTOMER',

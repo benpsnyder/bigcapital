@@ -16,10 +16,20 @@
     "@commitlint/cli": "^17.4.2",
     "@commitlint/config-conventional": "^17.4.2",
     "@commitlint/config-lerna-scopes": "^17.4.2",
+    "@eslint/eslintrc": "^2.1.1",
+    "@eslint/js": "~8.57.0",
     "@faker-js/faker": "^8.0.2",
+    "@nrwl/jest": "18.3.3",
+    "@nx/eslint": "18.3.3",
+    "@nx/jest": "18.3.3",
+    "@nx/node": "18.3.3",
+    "@nx/playwright": "18.3.3",
+    "@nx/vite": "18.3.3",
+    "@nx/webpack": "18.3.3",
     "@playwright/test": "^1.32.3",
     "husky": "^8.0.3",
     "lerna": "^8.1.2",
+    "nx": "18.3.3",
     "pnpm": "^9.0.5"
   },
   "engines": {
@@ -29,5 +39,6 @@
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
-  }
+  },
+  "dependencies": {}
 }

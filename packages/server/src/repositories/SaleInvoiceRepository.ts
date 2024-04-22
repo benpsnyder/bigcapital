@@ -1,5 +1,5 @@
 import moment from 'moment';
-import { SaleInvoice } from 'models';
+import { SaleInvoice } from '@/models';
 import TenantRepository from '@/repositories/TenantRepository';
 
 export default class SaleInvoiceRepository extends TenantRepository {

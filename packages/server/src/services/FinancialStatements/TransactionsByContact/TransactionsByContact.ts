@@ -9,7 +9,7 @@ import {
   ILedgerEntry,
 } from '@/interfaces';
 import FinancialSheet from '../FinancialSheet';
-import { allPassedConditionsPass } from 'utils';
+import { allPassedConditionsPass } from '@/utils';
 
 export default class TransactionsByContact extends FinancialSheet {
   readonly contacts: IContact[];

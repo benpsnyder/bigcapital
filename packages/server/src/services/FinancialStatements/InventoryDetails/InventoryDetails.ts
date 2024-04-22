@@ -17,8 +17,8 @@ import {
   IFormatNumberSettings,
 } from '@/interfaces';
 import FinancialSheet from '../FinancialSheet';
-import { transformToMapBy, transformToMapKeyValue } from 'utils';
-import { filterDeep } from 'utils/deepdash';
+import { transformToMapBy, transformToMapKeyValue } from '@/utils';
+import { filterDeep } from '@/utils/deepdash';
 
 const MAP_CONFIG = { childrenPath: 'children', pathFormat: 'array' };
 

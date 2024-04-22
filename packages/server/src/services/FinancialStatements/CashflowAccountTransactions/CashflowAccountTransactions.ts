@@ -6,7 +6,7 @@ import {
   INumberFormatQuery,
 } from '@/interfaces';
 import FinancialSheet from '../FinancialSheet';
-import { runningAmount } from 'utils';
+import { runningAmount } from '@/utils';
 
 export default class CashflowAccountTransactionReport extends FinancialSheet {
   private transactions: any;

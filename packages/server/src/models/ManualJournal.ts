@@ -1,6 +1,6 @@
 import { Model, mixin } from 'objection';
-import TenantModel from 'models/TenantModel';
-import { formatNumber } from 'utils';
+import TenantModel from '@/models/TenantModel';
+import { formatNumber } from '@/utils';
 import ModelSetting from './ModelSetting';
 import ManualJournalSettings from './ManualJournal.Settings';
 import CustomViewBaseModel from './CustomViewBaseModel';
@@ -94,9 +94,9 @@ export default class ManualJournal extends mixin(TenantModel, [
    * Relationship mapping.
    */
   static get relationMappings() {
-    const Media = require('models/Media');
-    const AccountTransaction = require('models/AccountTransaction');
-    const ManualJournalEntry = require('models/ManualJournalEntry');
+    const Media = require('@/models/Media');
+    const AccountTransaction = require('@/models/AccountTransaction');
+    const ManualJournalEntry = require('@/models/ManualJournalEntry');
 
     return {
       entries: {

@@ -7,7 +7,7 @@ import {
   IFinancialSheetTotalPeriod,
   IFormatNumberSettings,
 } from '@/interfaces';
-import { dateRangeFromToCollection } from 'utils';
+import { dateRangeFromToCollection } from '@/utils';
 import { FinancialDateRanges } from './FinancialDateRanges';
 
 export const FinancialDatePeriods = (Base) =>

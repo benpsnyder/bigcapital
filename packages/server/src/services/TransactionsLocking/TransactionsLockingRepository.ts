@@ -6,7 +6,7 @@ import {
   TransactionsLockingGroup,
   TransactionsLockingType,
 } from '@/interfaces';
-import { parseDate } from 'utils';
+import { parseDate } from '@/utils';
 
 @Service()
 export default class TransactionsLockingRepository {

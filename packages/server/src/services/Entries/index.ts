@@ -1,6 +1,6 @@
 import { Service } from 'typedi';
 import { ServiceError } from '@/exceptions';
-import { transformToMap } from 'utils';
+import { transformToMap } from '@/utils';
 import {
   ICommonLandedCostEntry,
   ICommonLandedCostEntryDTO

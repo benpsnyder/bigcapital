@@ -1,7 +1,7 @@
 /* eslint-disable global-require */
 import { mixin, Model } from 'objection';
 import { castArray } from 'lodash';
-import TenantModel from 'models/TenantModel';
+import TenantModel from '@/models/TenantModel';
 import AccountTypesUtils from '@/lib/AccountTypes';
 import CashflowAccountSettings from './CashflowAccount.Settings';
 import ModelSettings from './ModelSetting';
@@ -67,7 +67,7 @@ export default class CashflowAccount extends mixin(TenantModel, [
    * Relationship mapping.
    */
   static get relationMappings() {
-    const AccountTransaction = require('models/AccountTransaction');
+    const AccountTransaction = require('@/models/AccountTransaction');
 
     return {
       /**

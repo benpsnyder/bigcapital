@@ -11,7 +11,7 @@ import {
   SMS_NOTIFICATION_KEY,
 } from '@/interfaces';
 import { Tenant, TenantMetadata } from '@/system/models';
-import { formatNumber, formatSmsMessage } from 'utils';
+import { formatNumber, formatSmsMessage } from '@/utils';
 import { ServiceError } from '@/exceptions';
 import { EventPublisher } from '@/lib/EventPublisher/EventPublisher';
 

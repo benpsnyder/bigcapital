@@ -3,7 +3,7 @@ import './before';
 import '@/config';
 
 import express from 'express';
-import loadersFactory from 'loaders';
+import loadersFactory from '@/loaders';
 
 async function startServer() {
   const app = express();

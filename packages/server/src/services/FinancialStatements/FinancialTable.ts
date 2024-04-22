@@ -1,7 +1,7 @@
 import * as R from 'ramda';
 import { ITableColumn } from '@/interfaces';
 import { isEmpty, clone, cloneDeep, omit } from 'lodash';
-import { increment } from 'utils';
+import { increment } from '@/utils';
 import { ITableRow } from '@/interfaces';
 import { IROW_TYPE, DISPLAY_COLUMNS_BY } from './BalanceSheet/constants';
 

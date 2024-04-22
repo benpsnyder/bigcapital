@@ -1,0 +1,57 @@
+{
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "name": "server",
+  "prefix": "server",
+  "projectType": "application",
+  "sourceRoot": "packages/server/src",
+  "tags": [],
+  "targets": {
+    "build": {
+      "configurations": {
+        "production": {
+          "extractLicenses": true,
+          "fileReplacements": [],
+          "inspect": false,
+          "optimization": true
+        },
+        "staging": {
+          "extractLicenses": true,
+          "inspect": false,
+          "optimization": true
+        }
+      },
+      "executor": "@nx/webpack:webpack",
+      "options": {
+        "assets": ["packages/server/src/public"],
+        "compiler": "tsc",
+        "main": "packages/server/src/server.ts",
+        "outputPath": "dist/packages/server",
+        "target": "node",
+        "tsConfig": "packages/server/tsconfig.app.json",
+        "webpackConfig": "packages/server/webpack.config.js"
+      },
+      "outputs": ["{options.outputPath}"]
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["packages/server/**/*.ts"]
+      }
+    },
+    "serve": {
+      "executor": "@nx/js:node",
+      "options": {
+        "buildTarget": "server:build",
+        "port": 3000
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "options": {
+        "jestConfig": "packages/server/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "outputs": ["{workspaceRoot}/coverage/packages/server"]
+    }
+  }
+}

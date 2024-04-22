@@ -21,10 +21,6 @@
     "allowJs": true,
     "noEmit": false,
     "esModuleInterop": true,
-    "baseUrl": "./src",
-    "paths": {
-      "@/*": ["./*"]
-    },
   },
   "include": [
     "./src/**/*"
@@ -32,5 +28,6 @@
   "exclude": [
     "./node_modules",
     "tests"
-  ]
+  ],
+  "extends": "../../tsconfig.base.json"
 }

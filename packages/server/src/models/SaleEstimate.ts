@@ -1,7 +1,7 @@
 import moment from 'moment';
 import { Model, mixin } from 'objection';
-import TenantModel from 'models/TenantModel';
-import { defaultToTransform } from 'utils';
+import TenantModel from '@/models/TenantModel';
+import { defaultToTransform } from '@/utils';
 import SaleEstimateSettings from './SaleEstimate.Settings';
 import ModelSetting from './ModelSetting';
 import CustomViewBaseModel from './CustomViewBaseModel';
@@ -179,9 +179,9 @@ export default class SaleEstimate extends mixin(TenantModel, [
    * Relationship mapping.
    */
   static get relationMappings() {
-    const ItemEntry = require('models/ItemEntry');
-    const Customer = require('models/Customer');
-    const Branch = require('models/Branch');
+    const ItemEntry = require('@/models/ItemEntry');
+    const Customer = require('@/models/Customer');
+    const Branch = require('@/models/Branch');
 
     return {
       customer: {

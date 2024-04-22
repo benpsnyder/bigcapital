@@ -2,7 +2,7 @@ import { Service, Inject } from 'typedi';
 import moment from 'moment';
 import { ServiceError } from '@/exceptions';
 import { Invite, SystemUser, Tenant } from '@/system/models';
-import { hashPassword } from 'utils';
+import { hashPassword } from '@/utils';
 import events from '@/subscribers/events';
 import {
   IAcceptInviteEventPayload,

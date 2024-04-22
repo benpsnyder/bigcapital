@@ -9,7 +9,7 @@ import {
   reduceDeep,
   findValueDeep,
   filterNodesDeep,
-} from 'utils/deepdash';
+} from '@/utils/deepdash';
 
 export const FinancialSheetStructure = (Base: Class) =>
   class extends Base {

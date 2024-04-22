@@ -1,5 +1,5 @@
 import { request, expect, createUser } from '~/testInit';
-import { hashPassword } from 'utils';
+import { hashPassword } from '@/utils';
 import knex from '@/database/knex';
 import {
   tenantWebsite,
@@ -7,7 +7,7 @@ import {
   systemFactory,
   loginRes
 } from '~/dbInit';
-import TenantUser from 'models/TenantUser';
+import TenantUser from '@/models/TenantUser';
 import PasswordReset from '@/system/models/PasswordReset';
 import SystemUser from '@/system/models/SystemUser';
 

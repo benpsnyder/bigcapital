@@ -1,5 +1,5 @@
 import * as R from 'ramda';
-import { tableMapper, tableRowMapper } from 'utils';
+import { tableMapper, tableRowMapper } from '@/utils';
 import {
   IVendorBalanceSummaryData,
   IVendorBalanceSummaryVendor,

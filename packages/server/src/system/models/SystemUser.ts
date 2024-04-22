@@ -2,6 +2,7 @@ import { Model } from 'objection';
 import bcrypt from 'bcryptjs';
 import SystemModel from '@/system/models/SystemModel';
 import SoftDeleteQueryBuilder from '@/collection/SoftDeleteQueryBuilder';
+import Tenant from './Tenant';
 
 export default class SystemUser extends SystemModel {
   /**
@@ -57,7 +58,6 @@ export default class SystemUser extends SystemModel {
    * Relationship mapping.
    */
   static get relationMappings() {
-    const Tenant = require('system/models/Tenant');
 
     return {
       /**

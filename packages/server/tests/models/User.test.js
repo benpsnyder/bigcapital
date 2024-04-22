@@ -1,5 +1,5 @@
 import { create, expect } from '~/testInit';
-import User from 'models/TenantUser';
+import User from '@/models/TenantUser';
 import 'models/Role';
 import {
   tenantWebsite,

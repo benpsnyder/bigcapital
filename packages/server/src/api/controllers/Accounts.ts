@@ -14,7 +14,7 @@ import DynamicListingService from '@/services/DynamicListing/DynamicListService'
 import { DATATYPES_LENGTH } from '@/data/DataTypes';
 import CheckPolicies from '@/api/middleware/CheckPolicies';
 import { AccountsApplication } from '@/services/Accounts/AccountsApplication';
-import { MAX_ACCOUNTS_CHART_DEPTH } from 'services/Accounts/constants';
+import { MAX_ACCOUNTS_CHART_DEPTH } from '@/services/Accounts/constants';
 
 @Service()
 export default class AccountsController extends BaseController {

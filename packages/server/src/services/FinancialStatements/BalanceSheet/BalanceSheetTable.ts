@@ -13,7 +13,7 @@ import {
   IBalanceSheetAccountsNode,
   IBalanceSheetAggregateNode,
 } from '@/interfaces';
-import { tableRowMapper } from 'utils';
+import { tableRowMapper } from '@/utils';
 import FinancialSheet from '../FinancialSheet';
 import { BalanceSheetComparsionPreviousYear } from './BalanceSheetComparsionPreviousYear';
 import { IROW_TYPE, DISPLAY_COLUMNS_BY } from './constants';

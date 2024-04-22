@@ -1,7 +1,7 @@
 import moment from 'moment';
 import * as R from 'ramda';
 import { includes, isFunction, isObject, isUndefined, omit } from 'lodash';
-import { formatNumber, sortObjectKeysAlphabetically } from 'utils';
+import { formatNumber, sortObjectKeysAlphabetically } from '@/utils';
 
 export class Transformer {
   public context: any;

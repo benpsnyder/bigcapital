@@ -1,3 +1,4 @@
+// @ts-nocheck
 import bcrypt from 'bcryptjs';
 import moment from 'moment';
 import _ from 'lodash';

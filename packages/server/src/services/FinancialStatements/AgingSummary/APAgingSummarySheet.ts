@@ -12,7 +12,7 @@ import {
   IAPAgingSummaryTotal,
 } from '@/interfaces';
 import { Dictionary } from 'tsyringe/dist/typings/types';
-import { allPassedConditionsPass } from 'utils';
+import { allPassedConditionsPass } from '@/utils';
 
 export default class APAgingSummarySheet extends AgingSummaryReport {
   readonly tenantId: number;

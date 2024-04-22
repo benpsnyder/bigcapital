@@ -67,8 +67,8 @@ export default class PlanSubscription extends mixin(SystemModel) {
    * Relations mappings.
    */
   static get relationMappings() {
-    const Tenant = require('system/models/Tenant');
-    const Plan = require('system/models/Subscriptions/Plan');
+    const Tenant = require('@/system/models/Tenant');
+    const Plan = require('@/system/models/Subscriptions/Plan');
 
     return {
       /**

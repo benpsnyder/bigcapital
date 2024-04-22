@@ -12,6 +12,7 @@ exports.getCommonWebpackOptions = ({
   outputDir,
   outputFilename,
 }) => {
+
   const webpackOptions = {
     entry: ['regenerator-runtime/runtime', inputEntry],
     target: 'node',

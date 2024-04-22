@@ -3,12 +3,12 @@ import { EventSubscriber, On } from 'event-dispatch';
 
 import events from '@/subscribers/events';
 import TenancyService from '@/services/Tenancy/TenancyService';
-import BillsService from '@/services/Purchases/Bills';
+// import BillsService from '@/services/Purchases/Bills'; // how can you import a service that doesn't exist?
 
 @EventSubscriber()
 export default class BillSubscriber {
   tenancy: TenancyService;
-  billsService: BillsService;
+  //billsService: BillsService;
   logger: any;
 
   /**
@@ -16,7 +16,7 @@ export default class BillSubscriber {
    */
   constructor() {
     this.tenancy = Container.get(TenancyService);
-    this.billsService = Container.get(BillsService);
+    // this.billsService = Container.get(BillsService);
     this.logger = Container.get('logger');
   }
 }

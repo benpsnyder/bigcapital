@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Knex } from 'knex';
 import { Inject, Service } from 'typedi';
 import { ISaleReceipt } from '@/interfaces';

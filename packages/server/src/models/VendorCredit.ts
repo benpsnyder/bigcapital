@@ -1,5 +1,5 @@
 import { Model, raw, mixin } from 'objection';
-import TenantModel from 'models/TenantModel';
+import TenantModel from '@/models/TenantModel';
 import BillSettings from './Bill.Settings';
 import ModelSetting from './ModelSetting';
 import CustomViewBaseModel from './CustomViewBaseModel';
@@ -174,9 +174,9 @@ export default class VendorCredit extends mixin(TenantModel, [
    * Relationship mapping.
    */
   static get relationMappings() {
-    const Vendor = require('models/Vendor');
-    const ItemEntry = require('models/ItemEntry');
-    const Branch = require('models/Branch');
+    const Vendor = require('@/models/Vendor');
+    const ItemEntry = require('@/models/ItemEntry');
+    const Branch = require('@/models/Branch');
 
     return {
       vendor: {

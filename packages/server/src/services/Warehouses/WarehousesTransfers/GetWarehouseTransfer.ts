@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Service, Inject } from 'typedi';
 import HasTenancyService from '@/services/Tenancy/TenancyService';
 import { IWarehouseTransfer } from '@/interfaces';

@@ -8,7 +8,7 @@ import {
   ICustomer,
 } from '@/interfaces';
 import SmsNotificationsSettingsService from '@/services/Settings/SmsNotificationsSettings';
-import { formatNumber, formatSmsMessage } from 'utils';
+import { formatNumber, formatSmsMessage } from '@/utils';
 import { TenantMetadata } from '@/system/models';
 import { ServiceError } from '@/exceptions';
 import { EventPublisher } from '@/lib/EventPublisher/EventPublisher';

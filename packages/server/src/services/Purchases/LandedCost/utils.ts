@@ -1,5 +1,5 @@
 import { IItemEntry, IBillLandedCostTransactionEntry } from '@/interfaces';
-import { transformToMap } from 'utils';
+import { transformToMap } from '@/utils';
 
 export const ERRORS = {
   COST_TYPE_UNDEFINED: 'COST_TYPE_UNDEFINED',

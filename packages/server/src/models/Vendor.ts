@@ -1,5 +1,5 @@
 import { Model, mixin } from 'objection';
-import TenantModel from 'models/TenantModel';
+import TenantModel from '@/models/TenantModel';
 import PaginationQueryBuilder from './Pagination';
 import ModelSetting from './ModelSetting';
 import VendorSettings from './Vendor.Settings';
@@ -125,7 +125,7 @@ export default class Vendor extends mixin(TenantModel, [
    * Relationship mapping.
    */
   static get relationMappings() {
-    const Bill = require('models/Bill');
+    const Bill = require('@/models/Bill');
 
     return {
       bills: {

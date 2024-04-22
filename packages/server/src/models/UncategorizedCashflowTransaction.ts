@@ -1,7 +1,7 @@
 /* eslint-disable global-require */
 import * as R from 'ramda';
 import { Model, ModelOptions, QueryContext, mixin } from 'objection';
-import TenantModel from 'models/TenantModel';
+import TenantModel from '@/models/TenantModel';
 import ModelSettings from './ModelSetting';
 import Account from './Account';
 import UncategorizedCashflowTransactionMeta from './UncategorizedCashflowTransaction.meta';
@@ -79,7 +79,7 @@ export default class UncategorizedCashflowTransaction extends mixin(
    * Relationship mapping.
    */
   static get relationMappings() {
-    const Account = require('models/Account');
+    const Account = require('@/models/Account');
 
     return {
       /**

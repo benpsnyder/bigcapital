@@ -3,7 +3,7 @@ import moment from 'moment';
 import { Inject, Service } from 'typedi';
 import * as R from 'ramda';
 import composeAsync from 'async/compose';
-import { formatDateFields } from 'utils';
+import { formatDateFields } from '@/utils';
 import {
   IBillDTO,
   IBill,

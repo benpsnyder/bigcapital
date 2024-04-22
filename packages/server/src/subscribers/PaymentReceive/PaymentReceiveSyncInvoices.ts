@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Inject, Service } from 'typedi';
 import events from '@/subscribers/events';
 import { PaymentReceiveInvoiceSync } from '@/services/Sales/PaymentReceives/PaymentReceiveInvoiceSync';

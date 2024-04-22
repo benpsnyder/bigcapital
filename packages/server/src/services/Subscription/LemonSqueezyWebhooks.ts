@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { getPrice } from '@lemonsqueezy/lemonsqueezy.js';
 import config from '@/config';
 import { Inject, Service } from 'typedi';

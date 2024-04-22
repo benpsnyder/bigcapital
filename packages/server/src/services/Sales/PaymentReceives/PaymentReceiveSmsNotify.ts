@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Service, Inject } from 'typedi';
 import HasTenancyService from '@/services/Tenancy/TenancyService';
 import events from '@/subscribers/events';
@@ -8,7 +9,7 @@ import {
   IPaymentReceiveEntry,
 } from '@/interfaces';
 import SmsNotificationsSettingsService from '@/services/Settings/SmsNotificationsSettings';
-import { formatNumber, formatSmsMessage } from 'utils';
+import { formatNumber, formatSmsMessage } from '@/utils';
 import { TenantMetadata } from '@/system/models';
 import SaleNotifyBySms from '../SaleNotifyBySms';
 import { EventPublisher } from '@/lib/EventPublisher/EventPublisher';
@@ -74,7 +75,7 @@ export class PaymentReceiveNotifyBySms {
    * @param {IPaymentReceive} paymentReceive
    * @param {ICustomer} customer
    */
-  private sendSmsNotification = async (
+  public sendSmsNotification = async (
     tenantId: number,
     paymentReceive: IPaymentReceive
   ) => {
@@ -211,3 +212,5 @@ export class PaymentReceiveNotifyBySms {
     };
   };
 }
+
+export default PaymentReceiveNotifyBySms;

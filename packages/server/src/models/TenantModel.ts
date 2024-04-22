@@ -1,5 +1,5 @@
 import { Container } from 'typedi';
-import BaseModel from 'models/Model';
+import BaseModel from '@/models/Model';
 
 export default class TenantModel extends BaseModel {
   /**

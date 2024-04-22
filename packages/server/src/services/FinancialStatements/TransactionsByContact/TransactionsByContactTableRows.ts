@@ -1,6 +1,6 @@
 import moment from 'moment';
 import * as R from 'ramda';
-import { tableMapper, tableRowMapper } from 'utils';
+import { tableMapper, tableRowMapper } from '@/utils';
 import { ITransactionsByContactsContact, ITableRow } from '@/interfaces';
 
 enum ROW_TYPE {

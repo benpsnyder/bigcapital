@@ -4,7 +4,7 @@ import {
   IFormatNumberSettings,
   INumberFormatQuery,
 } from '@/interfaces';
-import { formatNumber } from 'utils';
+import { formatNumber } from '@/utils';
 
 export default class FinancialSheet {
   readonly numberFormat: INumberFormatQuery = {

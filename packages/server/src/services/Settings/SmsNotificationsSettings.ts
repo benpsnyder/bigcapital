@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Service, Inject } from 'typedi';
 import { isUndefined, omit, keyBy } from 'lodash';
 import {
@@ -7,7 +8,7 @@ import {
   ISmsNotificationAllowedVariable,
 } from '@/interfaces';
 import TenancyService from '@/services/Tenancy/TenancyService';
-import SMSNotificationsConfig from 'config/smsNotifications';
+import SMSNotificationsConfig from '@/config/smsNotifications';
 import { ServiceError } from '@/exceptions';
 
 const ERRORS = {

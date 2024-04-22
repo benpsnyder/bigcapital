@@ -1,7 +1,7 @@
 import { Service } from 'typedi';
 import { ISaleReceipt } from '@/interfaces';
 import { Transformer } from '@/lib/Transformer/Transformer';
-import { formatNumber } from 'utils';
+import { formatNumber } from '@/utils';
 import { ItemEntryTransformer } from '../Invoices/ItemEntryTransformer';
 
 @Service()

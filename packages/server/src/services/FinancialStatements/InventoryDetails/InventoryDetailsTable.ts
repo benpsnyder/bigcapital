@@ -8,8 +8,8 @@ import {
   IInventoryDetailsNode,
   IInventoryDetailsOpening,
 } from '@/interfaces';
-import { mapValuesDeep } from 'utils/deepdash';
-import { tableRowMapper } from 'utils';
+import { mapValuesDeep } from '@/utils/deepdash';
+import { tableRowMapper } from '@/utils';
 
 enum IROW_TYPE {
   ITEM = 'ITEM',

@@ -14,7 +14,7 @@ import CashFlowStatement from './CashFlow';
 import Ledger from '@/services/Accounting/Ledger';
 import CashFlowRepository from './CashFlowRepository';
 import InventoryService from '@/services/Inventory/Inventory';
-import { parseBoolean } from 'utils';
+import { parseBoolean } from '@/utils';
 import { Tenant } from '@/system/models';
 import { CashflowSheetMeta } from './CashflowSheetMeta';
 

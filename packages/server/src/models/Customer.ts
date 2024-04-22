@@ -1,5 +1,5 @@
 import { Model, mixin } from 'objection';
-import TenantModel from 'models/TenantModel';
+import TenantModel from '@/models/TenantModel';
 import PaginationQueryBuilder from './Pagination';
 import ModelSetting from './ModelSetting';
 import CustomerSettings from './Customer.Settings';
@@ -141,7 +141,7 @@ export default class Customer extends mixin(TenantModel, [
    * Relationship mapping.
    */
   static get relationMappings() {
-    const SaleInvoice = require('models/SaleInvoice');
+    const SaleInvoice = require('@/models/SaleInvoice');
 
     return {
       salesInvoices: {

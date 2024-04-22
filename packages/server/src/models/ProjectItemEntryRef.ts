@@ -1,5 +1,5 @@
 import { mixin, Model } from 'objection';
-import TenantModel from 'models/TenantModel';
+import TenantModel from '@/models/TenantModel';
 import CustomViewBaseModel from './CustomViewBaseModel';
 import ModelSetting from './ModelSetting';
 import ModelSearchable from './ModelSearchable';
@@ -31,7 +31,7 @@ export default class ProjectItemEntryRef extends mixin(TenantModel, [
   }
 
   static get relationMappings() {
-    const ItemEntry = require('models/ItemEntry');
+    const ItemEntry = require('@/models/ItemEntry');
 
     return {
       itemEntry: {

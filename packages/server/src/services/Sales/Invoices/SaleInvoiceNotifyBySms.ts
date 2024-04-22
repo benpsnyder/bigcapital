@@ -11,7 +11,7 @@ import {
   ICustomer,
 } from '@/interfaces';
 import SmsNotificationsSettingsService from '@/services/Settings/SmsNotificationsSettings';
-import { formatSmsMessage, formatNumber } from 'utils';
+import { formatSmsMessage, formatNumber } from '@/utils';
 import { TenantMetadata } from '@/system/models';
 import SaleNotifyBySms from '../SaleNotifyBySms';
 import { ServiceError } from '@/exceptions';

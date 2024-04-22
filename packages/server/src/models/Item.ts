@@ -1,5 +1,5 @@
 import { Model, mixin } from 'objection';
-import TenantModel from 'models/TenantModel';
+import TenantModel from '@/models/TenantModel';
 import { buildFilterQuery } from '@/lib/ViewRolesBuilder';
 import ItemSettings from './Item.Settings';
 import ModelSetting from './ModelSetting';
@@ -58,14 +58,14 @@ export default class Item extends mixin(TenantModel, [
    * Relationship mapping.
    */
   static get relationMappings() {
-    const Media = require('models/Media');
-    const Account = require('models/Account');
-    const ItemCategory = require('models/ItemCategory');
-    const ItemWarehouseQuantity = require('models/ItemWarehouseQuantity');
-    const ItemEntry = require('models/ItemEntry');
-    const WarehouseTransferEntry = require('models/WarehouseTransferEntry');
-    const InventoryAdjustmentEntry = require('models/InventoryAdjustmentEntry');
-    const TaxRate = require('models/TaxRate');
+    const Media = require('@/models/Media');
+    const Account = require('@/models/Account');
+    const ItemCategory = require('@/models/ItemCategory');
+    const ItemWarehouseQuantity = require('@/models/ItemWarehouseQuantity');
+    const ItemEntry = require('@/models/ItemEntry');
+    const WarehouseTransferEntry = require('@/models/WarehouseTransferEntry');
+    const InventoryAdjustmentEntry = require('@/models/InventoryAdjustmentEntry');
+    const TaxRate = require('@/models/TaxRate');
 
     return {
       /**

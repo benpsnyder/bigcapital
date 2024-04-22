@@ -1,7 +1,6 @@
 import { Container } from 'typedi';
 import { On, EventSubscriber } from 'event-dispatch';
 import events from '@/subscribers/events';
-import SaleReceiptNotifyBySms from '@/services/Sales/SaleReceiptNotifyBySms';
 import PaymentReceiveNotifyBySms from './PaymentReceiveSmsNotify';
 
 @EventSubscriber()

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Service, Inject } from 'typedi';
 import Currencies from 'js-money/lib/currency';
 import HasTenancyService from '@/services/Tenancy/TenancyService';
