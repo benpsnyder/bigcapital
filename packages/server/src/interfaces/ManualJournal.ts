@@ -1,5 +1,5 @@
 import { Knex } from 'knex';
-import { IDynamicListFilterDTO } from './DynamicFilter';
+import { IDynamicListFilter } from './DynamicFilter';
 import { ISystemUser } from './User';
 import { IAccount } from './Account';
 
@@ -58,7 +58,7 @@ export interface IManualJournalDTO {
   entries: IManualJournalEntryDTO[];
 }
 
-export interface IManualJournalsFilter extends IDynamicListFilterDTO {
+export interface IManualJournalsFilter extends IDynamicListFilter {
   stringifiedFilterRoles?: string;
   page: number;
   pageSize: number;

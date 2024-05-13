@@ -82,7 +82,7 @@ export interface IItemsService {
   ): Promise<{ items: IItem[] }>;
 }
 
-export interface IItemsFilter extends IDynamicListFilterDTO {
+export interface IItemsFilter extends IDynamicListFilter {
   stringifiedFilterRoles?: string;
   page: number;
   pageSize: number;

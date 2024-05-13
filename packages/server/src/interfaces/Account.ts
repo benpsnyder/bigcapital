@@ -1,5 +1,5 @@
 import { Knex } from 'knex';
-import { IDynamicListFilterDTO } from '@/interfaces/DynamicFilter';
+import { IDynamicListFilter } from '@/interfaces/DynamicFilter';
 
 export interface IAccountDTO {
   name: string;
@@ -92,7 +92,7 @@ export enum IAccountsStructureType {
   Flat = 'flat',
 }
 
-export interface IAccountsFilter extends IDynamicListFilterDTO {
+export interface IAccountsFilter extends IDynamicListFilter {
   stringifiedFilterRoles?: string;
   onlyInactive: boolean;
   structure?: IAccountsStructureType;

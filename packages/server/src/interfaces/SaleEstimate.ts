@@ -1,6 +1,6 @@
 import { Knex } from 'knex';
 import { IItemEntry, IItemEntryDTO } from './ItemEntry';
-import { IDynamicListFilterDTO } from '@/interfaces/DynamicFilter';
+import { IDynamicListFilter } from '@/interfaces/DynamicFilter';
 import { CommonMailOptions, CommonMailOptionsDTO } from './Mailable';
 
 export interface ISaleEstimate {
@@ -40,7 +40,7 @@ export interface ISaleEstimateDTO {
   warehouseId?: number;
 }
 
-export interface ISalesEstimatesFilter extends IDynamicListFilterDTO {
+export interface ISalesEstimatesFilter extends IDynamicListFilter {
   stringifiedFilterRoles?: string;
 }
 

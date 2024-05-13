@@ -1,5 +1,5 @@
 import { Knex } from 'knex';
-import { IDynamicListFilterDTO } from './DynamicFilter';
+import { IDynamicListFilter } from './DynamicFilter';
 import { IItemEntry, IItemEntryDTO } from './ItemEntry';
 import { IBillLandedCost } from './LandedCost';
 
@@ -92,7 +92,7 @@ export interface IBill {
   totalLocal: number;
 }
 
-export interface IBillsFilter extends IDynamicListFilterDTO {
+export interface IBillsFilter extends IDynamicListFilter {
   stringifiedFilterRoles?: string;
   page: number;
   pageSize: number;

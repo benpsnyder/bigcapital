@@ -69,7 +69,7 @@ export interface IPaymentReceiveEntryDTO {
   paymentAmount: number;
 }
 
-export interface IPaymentReceivesFilter extends IDynamicListFilterDTO {
+export interface IPaymentReceivesFilter extends IDynamicListFilter {
   stringifiedFilterRoles?: string;
 }
 
